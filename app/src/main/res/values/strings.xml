@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">JoKemPo</string>
+    <string name="empate">Empatou!</string>
+    <string name="ganhou">Ganhou!</string>
+    <string name="perdeu">Perdeu!</string>
+</resources>

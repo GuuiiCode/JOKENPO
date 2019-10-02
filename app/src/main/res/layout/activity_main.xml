@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/img_interrogacao_jogador"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/interrogacao"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="35dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/img_btn_pedra"
+        app:layout_constraintEnd_toStartOf="@+id/img_iterrogacao_maquina"/>
+
+    <ImageView
+        android:id="@+id/img_iterrogacao_maquina"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/interrogacao"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintTop_toTopOf="@+id/img_interrogacao_jogador"
+        app:layout_constraintBottom_toBottomOf="@+id/img_interrogacao_jogador"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/img_interrogacao_jogador"/>
+
+    <ImageView
+        android:id="@+id/img_vs"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/vs"
+        app:layout_constraintTop_toTopOf="@+id/img_interrogacao_jogador"
+        app:layout_constraintBottom_toBottomOf="@+id/img_interrogacao_jogador"
+        app:layout_constraintEnd_toStartOf="@+id/img_iterrogacao_maquina"
+        app:layout_constraintStart_toEndOf="@+id/img_interrogacao_jogador"/>
+
+    <ImageButton
+        android:id="@+id/img_btn_pedra"
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#64DD17"
+        android:src="@drawable/pedra"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/img_btn_papel"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/img_btn_papel"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:backgroundTint="#FFAB00"
+        android:src="@drawable/papel"
+        app:layout_constraintBottom_toBottomOf="@+id/img_btn_pedra"
+        app:layout_constraintEnd_toStartOf="@+id/img_btn_tesoura"
+        app:layout_constraintStart_toEndOf="@+id/img_btn_pedra"
+        app:layout_constraintTop_toTopOf="@+id/img_btn_pedra" />
+
+    <ImageButton
+        android:id="@+id/img_btn_tesoura"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="#0091EA"
+        android:src="@drawable/tesoura"
+        app:layout_constraintBottom_toBottomOf="@+id/img_btn_papel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/img_btn_papel"
+        app:layout_constraintTop_toTopOf="@+id/img_btn_papel" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
